@@ -1,0 +1,22 @@
+# CI Unit Tests (Lab 9)
+
+Проект с unit-тестами для класса Calculator (лабораторная работа №6).
+
+Тесты автоматически запускаются через GitHub Actions при каждом push.
+
+## Запуск локально
+
+    pip install -r requirements.txt
+    pytest test_calculator.py -v
+
+## Что проверяется
+
+- Арифметические операции: add, subtract, multiply, divide
+- Деление на ноль → ValueError
+- Проверка простоты числа: is_prime_number
+- Проверка чётности: is_even
+- Обработка невалидного типа ввода → TypeError
+
+## Результат
+
+49 unit-тестов, все проходят за 0.03 секунды.
